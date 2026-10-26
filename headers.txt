@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+X-frame-options: DENY
+Referrer-policy: same-origin
+Permissions-policy: camera=(), microphone=(), geolocation=()
+Date: Mon, 26 Oct 2026 11:35:24 GMT
+Content-security-policy: default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; form-action 'self'; frame-ancestors 'none'
+Content-type: text/html; charset=utf-8
+Content-length: 6036
+X-content-type-options: nosniff
+Cache-control: no-store
+

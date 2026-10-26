@@ -1,0 +1,9 @@
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY foci-trace.jar /app/foci-trace.jar
+COPY lib /app/lib
+RUN mkdir -p /tmp/foci-data /tmp/foci-uploads
+ENV FOCI_DATA_DIR=/tmp/foci-data \
+    FOCI_UPLOAD_DIR=/tmp/foci-uploads \
+    FOCI_COOKIE_SECURE=true
+ENTRYPOINT ["java","--add-modules","jdk.httpserver","-jar","/app/foci-trace.jar"]

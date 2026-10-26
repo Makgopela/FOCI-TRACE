@@ -1,0 +1,7 @@
+out
+server.log
+cookies.txt
+pcookies.txt
+data/*
+uploads/*
+reference/*.xlsx
